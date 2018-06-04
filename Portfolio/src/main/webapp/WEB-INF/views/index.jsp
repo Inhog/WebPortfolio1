@@ -173,7 +173,7 @@ input[type=text], input[type=password] {
 					<!-- 이부분은 참고해랏 -->
 					<li class="active"><a href="<c:url value='/'/>">Home</a></li>
 					<li><a href="<c:url value='/About/index'/>">About</a></li>
-					<li><a href="./template/html/List/index.html">List</a></li>
+					<li><a href="<c:url value='/List/index'/>">List</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<%
@@ -196,7 +196,7 @@ input[type=text], input[type=password] {
 										<span
 											onclick="document.getElementById('id01').style.display='none'"
 											class="close" title="Close Modal">&times;</span> <img
-											src="./template/images/login.png" alt="login">
+											src="/resources/images/login.png" alt="login">
 									</div>
 									<div class="container">
 										<label for="uname"><b>Username</b></label> <input type="text"
@@ -225,7 +225,7 @@ input[type=text], input[type=password] {
 					<a href="<c:url value='/'/>">Main</a>
 				</p>
 				<p>
-					<a href="./index.html">Notice</a>
+					<a href="<c:url value='/'/>">Notice</a>
 				</p>
 			</div>
 			<div class="col-sm-8 text-left">

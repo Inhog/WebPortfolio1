@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping(value="/About")
-public class AboutController {
+@RequestMapping(value="/Login")
+public class LoginController {
 
 	@RequestMapping(value = "/{action}")
 	public ModelAndView index(@PathVariable String action,
 			ModelAndView modelandView) {
-		String viewName="/JSP/About/";
+		String viewName="/JSP/Login/";
 		if("index".equalsIgnoreCase(action)) {
 			viewName = viewName+action;
 		}

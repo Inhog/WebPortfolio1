@@ -5,9 +5,9 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/bootstrap.min.css">
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>">
+  <script src="<c:url value='/resources/js/jquery.min.js'/>"></script>
+  <script src="<c:url value='/resources/js/bootstrap.min.js'/>"></script>
   <style>
   .list{
   width:60%;
@@ -154,13 +154,13 @@ input[type=text], input[type=password] {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="../../../index.html">Logo</a>
+      <a class="navbar-brand" href="<c:url value='/'/>">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="../../../index.html">Home</a></li>
-        <li><a href="../About/index.html">About</a></li>
-        <li class="active"><a href="./index.html">List</a></li>
+        <li><a href="<c:url value='/'/>">Home</a></li>
+        <li><a href="<c:url value='/About/index'/>">About</a></li>
+        <li class="active"><a href="<c:url value='/List/index'/>">List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
@@ -169,7 +169,7 @@ input[type=text], input[type=password] {
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="../../images/login.png" alt="login" >
+      <img src="/resources/images/login.png" alt="login" >
     </div>
 
     <div class="container">
@@ -197,8 +197,8 @@ input[type=text], input[type=password] {
 <div class="container-fluid text-center">    
 	<div class="row content">
 		<div class="col-sm-2 sidenav">
-      		<p><a href="./index.html">Main</a></p>
-      		<p><a href="./index.html">Notice</a></p>
+      		<p><a href="<c:url value='/'/>">Main</a></p>
+      		<p><a href="<c:url value='/'/>">Notice</a></p>
     	</div>
     		<div class="col-sm-8 text-left">
 				<table class ="table  table-bordered">
@@ -222,7 +222,7 @@ input[type=text], input[type=password] {
 				</tbody>
 			</table>
 			<hr/>
-			<a class="btn btn-default pull-right" href = "./write.html">글쓰기</a>
+			<a class="btn btn-default pull-right" href ="<c:url value='/List/write'/>">글쓰기</a>
 			<div class ="text-center">
 				<ul class="pagination">
 					<li><a href="#">1</a></li>
