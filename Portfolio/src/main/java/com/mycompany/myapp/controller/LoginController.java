@@ -15,6 +15,8 @@ public class LoginController {
 		String viewName="/JSP/Login/";
 		if("index".equalsIgnoreCase(action)) {
 			viewName = viewName+action;
+		}else if("loginRead".equalsIgnoreCase(action)) {
+			viewName = viewName+action;
 		}
 		modelandView.setViewName(viewName);
 		return modelandView;

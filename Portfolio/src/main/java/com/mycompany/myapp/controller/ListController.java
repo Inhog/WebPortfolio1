@@ -15,8 +15,6 @@ public class ListController {
 		String viewName="/JSP/List/";
 		if("index".equalsIgnoreCase(action)) {
 			viewName = viewName+action;
-		}else if("list".equalsIgnoreCase(action)) {
-			viewName = viewName+action;			
 		}else if("write".equalsIgnoreCase(action)) {
 			viewName = viewName+action;
 		}

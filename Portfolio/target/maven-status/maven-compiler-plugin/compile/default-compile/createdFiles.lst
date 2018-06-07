@@ -1,0 +1,5 @@
+com\mycompany\myapp\controller\AboutController.class
+com\mycompany\myapp\controller\LoginController.class
+com\mycompany\myapp\controller\ListController.class
+com\mycompany\myapp\HomeController.class
+com\mycompany\myapp\controller\SignUpController.class
