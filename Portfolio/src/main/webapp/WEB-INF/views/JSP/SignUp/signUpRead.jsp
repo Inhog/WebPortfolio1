@@ -1,27 +1,30 @@
-<form action="/action_page.php" style="border:1px solid #ccc">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<div class="col-sm-8 text-left"> 
+<form action="<c:url value='/'/>" style="border:1px solid #ccc; margin:10px">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="${resultMap.email}" name="email" required>
-
+	<p>username : ${resultMap.USEREMAIL}</p>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="${resultMap.psw}" name="psw" required>
+	<p>password : ${resultMap.PASSWORD}</p>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="${resultMap.psw_repeat}" name="psw-repeat" required>
+	<p>password repeat : ${resultMap.PASSWORD_REPEAT}</p>
     
     <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+	<p> remember state : ${resultMap.remember}</p>
     </label>
     
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" class="signupbtn">Home</button>
     </div>
   </div>
 </form>
+<hr>
+</div>
+

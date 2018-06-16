@@ -8,13 +8,13 @@
     <hr>
 
     <label for="email"><b>Email</b></label><p/>
-    <input type="text" placeholder="Enter Email" name="email" required/><p/>
+    <input type="text" placeholder="Enter Email" name="USEREMAIL" required/><p/>
 
     <label for="psw"><b>Password</b></label><p/>
-    <input type="password" placeholder="Enter Password" name="psw" required/><p/>
+    <input type="password" placeholder="Enter Password" name="PASSWORD" required/><p/>
 
     <label for="psw_repeat"><b>Repeat Password</b></label><p/>
-    <input type="password" placeholder="Repeat Password" name="psw_repeat" required/>
+    <input type="password" placeholder="Repeat Password" name="PASSWORD_REPEAT" required/>
     <p/>
 	    
     <label>

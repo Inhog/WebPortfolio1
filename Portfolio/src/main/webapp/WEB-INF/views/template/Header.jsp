@@ -141,10 +141,6 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-  </style>
+</style>
 </head>
-<body>
-
-</body>
 </html>
